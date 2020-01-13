@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body{
+    background-image:url("katti.jpeg");
+    
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:red;
+}
+.m
+{
+  float: right;
+}
+.img-container {
+  float: right;
+  width: 30%;
+  padding: 20px;}
+
+.hi {
+  content: "";
+  clear: both;
+  display: table;
+}
+.mySlides {
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Hello, anubhav shrivastava</a></li>
+  <li class="m"><a href="#news">home</a></li>
+  <li class="m"><a href="#contact">product</a></li>
+  <li class="m"><a href="#about">logout</a></li>
+</ul>
+
+<div class="hi">
+  <div class="img-container">
+  <img src="excel.jpg" alt="Italy" style="width:100%">
+  </div>
+  
+  <div class="img-container">
+  <img src="clean.jpg" alt="Mountains" style="width:100%"></div>
+  <div class="img-container">
+
+  <img src="food.jpg" alt="Mountains" style="width:100%">
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="tide.jpg" style="width:100%">
+  <img class="mySlides" src="food.jpg" style="width:100%">
+  <img class="mySlides" src="clean.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); 
+}
+</script>
+
+
+ 
+</body>
+</html>
